@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Products</title>
+  <link rel="icon" href="favicon_io/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Add Products</h1>
+  <form id="product-form">
+    <label for="name">Product Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+
+    <label for="category">Category:</label>
+    <select id="category" name="category" required>
+      <option value="">Select Category</option>
+      <option value="electronics">Electronics</option>
+      <option value="clothing">Clothing</option>
+      <option value="food">Food</option>
+      <option value="soap">Soap</option>
+    </select>
+    <br>
+
+    <label for="image-url">Image URL:</label>
+    <input type="file" id="image-file" name="image-upload" accept="image/*" required>
+    <br>
+
+    <button type="submit">Add Product</button>
+  </form>
+  <script src="index.js" type="module"></script>
+</body>
+</html>
